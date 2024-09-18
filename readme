@@ -1,0 +1,41 @@
+
+Hi all! Check this out (well, if you want 😉):
+
+Over the weekend, I had some fun learning about biology (specifically, DNA) with ChatGPT-4. I had absolutely no prior knowledge of this stuff, but we built a Python script to learn by doing rather than just reading about it. Here’s what we accomplished:
+
+1. Understanding DNA Stability:
+
+We started by learning that DNA is made up of four nucleotides (A, T, C, G), which form the famous double helix structure. A pairs with T, and G pairs with C.
+
+We then wrote a Python script to analyze the stability of a DNA sequence by calculating the percentage of G and C nucleotides. The more G-C pairs a DNA sequence has, the more stable it is, and the more capable it is of withstanding extreme conditions. DNA provides the instructions cells need to create proteins.
+
+2. From DNA to Amino Acids:
+
+Next, we learned that DNA sequences are read in groups of three nucleotides called codons. Each codon codes for a specific amino acid. We wrote code that processes a DNA sequence, splits it into codons, and uses a lookup table to map each codon to its corresponding amino acid.
+
+3. How Proteins are Made:
+
+Amino acids are the building blocks of proteins. But how do cells turn DNA into proteins? Here’s the process:
+
+	•	The mRNA makes a temporary copy of a segment of DNA (from inside the nucleus) and carries it to the ribosome.
+	•	The ribosome then reads the mRNA and uses tRNA to bring the necessary amino acids to assemble the protein.
+
+4. Predicting Protein Structure (Roughly):
+
+Before determining the exact protein produced by a DNA sequence, we made an approximation of the secondary structure (whether the amino acids form alpha helices, beta sheets, etc.). We used a lookup table based on common patterns in amino acid sequences.
+
+5. Querying the BLAST Database:
+
+Once we had the amino acid sequence, we used BioPython to query the BLAST database, which matches our sequence to known proteins. By doing this, we were able to identify proteins based on their amino acid sequences.
+
+6. Understanding Protein Function:
+
+Using the BLAST results, we could then look up the function of the protein within the cell. For example, if BLAST returns hemoglobin, we know it’s involved in oxygen transport in the blood.
+
+7. Simulating Mutations:
+
+We also explored how mutations affect proteins by altering the DNA sequence and rerunning the code. Mutations can result in changes to the protein, create a nonfunctional protein, or have no effect at all!
+
+8. Code Available on GitHub:
+
+I’ve uploaded the Python code to GitHub with additional documentation. It requires Python 3.11.1 to run, and keep in mind we’re bypassing SSL certificates to query BLAST, so be aware of that.
